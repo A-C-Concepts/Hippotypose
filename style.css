@@ -88,7 +88,6 @@
     height: 80vh;
     display: flex;
     justify-content: center;
-    position: relative;
 }
 
 .center-element h1{
@@ -121,25 +120,12 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    z-index: 10;
-}
-
-.horse{
-    position: absolute;
-    left:19vw;
-    bottom: -20vh;
-    background: url('./assets/horse.png');
-    width: 36vw;
-    height: 53vh;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
 .veto{
     position: absolute;
     right: 0;
-    top: 8vh;
+    top: 18vh;
     background: url('./assets/veto2.png');
     width: 23vw;
     height: 70vh;
@@ -161,50 +147,4 @@
     border-radius: 100px;
     background-color: #0A3777;
     color: white;
-}
-
-.second-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-    background-color: #0A3777;
-    height: 70vh;
-}
-
-.second-section .wave{
-    position: absolute;
-    top: 0;
-}
-
-.second-section .tilt{
-    position: absolute;
-    bottom: 0;
-}
-
-.second-section .content{
-    display: flex;
-    width: 90vw;
-    height: 60vh;
-}
-
-.content .text-content{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.text-content h2{
-    color: white;
-    font-weight: 500;
-    font-size: 32px;
-    margin-bottom: 25px;
-}
-
-.text-content p{
-    color: white;
-    font-weight: 300;
-    font-size: 18px;
-    width: 95%;
 }
