@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 200vh;
+    background-color: #F7F7F7;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    width: 100vw;
+    height: 10vh;
+}
+
+.navbar img{
+    height: 4.5vh;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 12px;
+    list-style: none;
+    text-transform: none;
+    cursor: pointer;
+    height: 4vh;
+    border-bottom: transparent 1.5px solid;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #A8A8A8;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.menu ul li:hover{
+    border-bottom: #0A3777 1.5px solid;
+    transition: ease 150ms;
+}
+
+.menu ul li:hover a{
+    color: #0A3777;
+    transition: ease 150ms;
+}
+
+.connexionbtn{
+    position: absolute;
+    margin-right: 40px;
+    right: 0px;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #0A3777;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 200px;
+}
+
+#active{
+    border-bottom: #0A3777 1.5px solid;
+
+}
+
+#active a{
+    color: #0A3777;
+}
+
+.main-section{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.center-element h1{
+    text-align: center;
+    width: 60vw;
+    font-weight: 500;
+    font-size: 35px;
+    color: #0A3777;
+}
+
+.center-element h1 strong{
+    font-weight: 500;
+    font-size: 35px;
+    color: #0EAAE8;
+}
+
+.center-element{
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.antoine{
+    position: absolute;
+    left: -10vw;
+    background: url('./assets/antoine.png');
+    width: 36vw;
+    height: 86vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.veto{
+    position: absolute;
+    right: 0;
+    top: 18vh;
+    background: url('./assets/veto2.png');
+    width: 23vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.border-bottom{
+    height: 3px;
+    width: 28vw;
+    margin: 45px 0;
+    border-radius: 100px;
+    background-color: #A8A8A8;
+}
+
+.more-btn{
+    padding: 13px 37px;
+    border-radius: 100px;
+    background-color: #0A3777;
+    color: white;
+}
