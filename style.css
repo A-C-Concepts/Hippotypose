@@ -6,7 +6,7 @@
 
 .container{
     width: 100vw;
-    height: 200vh;
+    height: 400vh;
     background-color: #F7F7F7;
     font-family: 'Roboto', sans-serif;
     position: relative;
@@ -207,4 +207,139 @@
     font-weight: 300;
     font-size: 18px;
     width: 95%;
+}
+
+.third-section{
+    display: flex;
+    height: 60vh;
+    width: 100vw;
+}
+
+.third-section .card{
+    flex: 1;
+    transition: ease-in 200ms;
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: -4px 5px 19px 1px #A8A8A8;
+    padding: 20px;
+}
+
+.third-section .left-card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.third-section .card:not(:nth-last-child(1)){
+    margin-right: 20px;
+}
+
+.third-section .card:nth-last-child(1){
+    margin-right: 30px
+}
+
+.third-section .card:nth-child(1){
+    margin-left: 30px;
+}
+
+.third-section .card:hover{
+    flex: 8;
+    display: flex;
+    align-items: flex-start;
+    transition: ease-in 200ms;
+}
+
+.third-section .card:hover .left-card{
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: ease-in 200ms;
+}
+
+.third-section .left-card h3{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    transition: ease-in 200ms;
+    color: #0A3777;
+}
+
+.third-section .left-card h2{
+    position: absolute;
+    font-weight: 600;
+    font-size: 27px;
+    filter: opacity(0);
+    transition: ease-in 200ms;
+    color: #0A3777;
+}
+
+.third-section .left-card p{
+    display: none;
+    font-weight: 400;
+    font-size: 15px;
+    transition: ease-in 200ms;
+    color: #0A3777;
+}
+
+.third-section .left-card p strong{
+    font-weight: 400;
+    font-size: 15px;
+    color: #0EAAE8;
+}
+
+.third-section .card:hover h3{
+    display: none;
+    transition: ease-in 200ms;
+}
+
+.third-section .card:hover h2{
+    position: relative;
+    margin-bottom: 20px;
+    filter: opacity(100%);
+    transition: ease-in 200ms;
+}
+
+.third-section .card:hover p{
+    display: block;
+    width: 75%;
+    transition: ease-in 200ms;
+}
+
+.card-img{
+    display: none;
+    width: 30%;
+    object-fit: contain;
+}
+
+.third-section .card:hover .card-img{
+    display: block;
+}
+
+/*Second card*/
+
+.third-section .second{
+    flex: 1;
+    transition: ease-in 200ms;
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: -4px 5px 19px 1px #A8A8A8;
+    padding: 20px;
+    flex-direction: column;
+}
+
+
+.third-section .second:not(:nth-last-child(1)){
+    margin-right: 20px;
+}
+
+.third-section .second:nth-last-child(1){
+    margin-right: 30px
+}
+
+.third-section .second:nth-child(1){
+    margin-left: 30px;
 }
