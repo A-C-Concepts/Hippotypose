@@ -372,7 +372,7 @@
 .third-section .card:hover p{
     display: block;
     visibility: visible;
-    transition: ease-in 1ms 200ms;
+    transition: 0ms 200ms;
 }
 
 .card-img{
