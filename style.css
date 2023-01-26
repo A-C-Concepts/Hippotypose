@@ -378,6 +378,28 @@
     display: block;
 }
 
+.third-section .card .left-card ul{
+    display: none;
+    list-style: none;
+}
+
+.third-section .card .left-card li{
+    margin-right: 10px;
+}
+
+.third-section .card .left-card a{
+    text-decoration: underline;
+    color: #0EAAE8;
+}
+
+.third-section .card:hover .left-card ul{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0px;
+    flex-direction: row;
+}
+
 /*Second card*/
 
 .third-section .second{
