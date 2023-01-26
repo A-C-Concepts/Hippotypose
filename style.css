@@ -224,8 +224,6 @@
 
 .third-section{
     display: flex;
-    height: 60vh;
-    width: 100vw;
 }
 
 .third-section .card{
@@ -237,6 +235,8 @@
     box-shadow: -4px 5px 19px 1px #A8A8A8;
     padding: 20px;
     position: relative;
+    width: 22%;
+    height: 60vh;
 }
 
 .third-section .card:nth-child(1){
