@@ -244,18 +244,12 @@
     background-size: cover;
     background-position: center;
 }
-.third-section .card:hover:nth-child(1){
-    background: white;
-}
 
 /*2eme cards*/
 .third-section .card:nth-child(2){
     background: url("./assets/statique.jpg");
     background-size: cover;
     background-position: center;
-}
-.third-section .card:hover:nth-child(2){
-    background: white;
 }
 
 /*3eme cards*/
@@ -264,9 +258,6 @@
     background-size: cover;
     background-position: center;
 }
-.third-section .card:hover:nth-child(3){
-    background: white;
-}
 
 /*4eme cards*/
 .third-section .card:nth-child(4){
@@ -274,22 +265,34 @@
     background-size: cover;
     background-position: center;
 }
-.third-section .card:hover:nth-child(4){
-    background: white;
-}
 
 /*5eme cards*/
-.third-section .card:nth-child(5){
+#one{
     background: url("./assets/diagno.jpeg");
     background-size: cover;
     background-position: center;
 }
-.third-section .card:hover:nth-child(5){
+#two{
+    background: url("./assets/.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+#three{
+    background: url("./assets/.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+#four{
+    background: url("./assets/.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.third-section .card:hover , #one:hover, #two:hover, #three:hover, #four:hover{
     background: white;
 }
 
 .third-section .left-card{
-    width: 100%;
+    width: 72%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -342,12 +345,13 @@
     font-weight: 600;
     font-size: 27px;
     color: #0A3777;
+    transition: 0ms 200ms;
 }
 
 .third-section .left-card p{
     visibility: hidden;
     font-weight: 400;
-    width: 63%;
+    width: 90%;
     font-size: 15px;
     color: #0A3777;
 }
@@ -365,6 +369,7 @@
 
 .third-section .card:hover h2{
     display: block;
+    visibility: visible;
     margin-bottom: 20px;
     transition: all ease-in 200ms;
 }
@@ -376,7 +381,7 @@
 }
 
 .card-img{
-    display: none;
+    visibility: hidden;
     position: absolute;
     right: 0;
     top: 0;
@@ -389,10 +394,11 @@
 
 .third-section .card:hover .card-img{
     display: block;
+    visibility: visible;
 }
 
 .third-section .card .left-card ul{
-    display: none;
+    visibility: hidden;
     list-style: none;
 }
 
@@ -407,6 +413,7 @@
 
 .third-section .card:hover .left-card ul{
     display: flex;
+    visibility: visible;
     position: absolute;
     bottom: 0;
     padding: 20px 0px;
