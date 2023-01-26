@@ -223,6 +223,15 @@
     background-color: white;
     box-shadow: -4px 5px 19px 1px #A8A8A8;
     padding: 20px;
+    position: relative;
+}
+
+.third-section .card:nth-child(1){
+    background: url("./assets/card1.jpg");
+    background-size: cover;
+}
+.third-section .card:hover:nth-child(1){
+    background: white;
 }
 
 .third-section .left-card{
@@ -264,7 +273,7 @@
     font-weight: 600;
     font-size: 24px;
     transition: ease-in 200ms;
-    color: #0A3777;
+    color: white;
 }
 
 .third-section .left-card h2{
@@ -279,6 +288,7 @@
 .third-section .left-card p{
     display: none;
     font-weight: 400;
+    width: 63%;
     font-size: 15px;
     transition: ease-in 200ms;
     color: #0A3777;
@@ -304,14 +314,19 @@
 
 .third-section .card:hover p{
     display: block;
-    width: 75%;
     transition: ease-in 200ms;
 }
 
 .card-img{
     display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 30%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .third-section .card:hover .card-img{
