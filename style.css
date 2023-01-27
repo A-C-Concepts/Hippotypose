@@ -230,7 +230,7 @@
 .third-section{
     display: flex;
     flex-wrap: wrap;
-    min-height: 20%;
+    min-height: 60vh;
 }
 
 .third-section .card{
