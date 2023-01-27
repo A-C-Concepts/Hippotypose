@@ -168,7 +168,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-
     background-color: #0A3777;
     height: 70vh;
 }
@@ -230,6 +229,8 @@
 
 .third-section{
     display: flex;
+    flex-wrap: wrap;
+    min-height: 20%;
 }
 
 .third-section .card{
@@ -241,8 +242,6 @@
     box-shadow: -4px 5px 19px 1px #A8A8A8;
     padding: 20px;
     position: relative;
-    width: 22%;
-    height: 60vh;
 }
 
 .third-section .card:nth-child(1){
@@ -301,7 +300,7 @@
     width: 72%;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .third-section .card:not(:nth-last-child(1)){
@@ -325,7 +324,6 @@
 
 .third-section .card:hover .left-card{
     flex-direction: column;
-    justify-content: flex-start;
     transition: ease-in 200ms;
 }
 
@@ -355,11 +353,12 @@
 }
 
 .third-section .left-card p{
-    visibility: hidden;
+    display: none;
     font-weight: 400;
     width: 90%;
     font-size: 15px;
     color: #0A3777;
+    margin-bottom: 40px;
 }
 
 .third-section .left-card p strong{
@@ -392,10 +391,10 @@
     right: 0;
     top: 0;
     width: 30%;
-    height: 100%;
     object-fit: cover;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    height: 100%;
 }
 
 .third-section .card:hover .card-img{
@@ -420,12 +419,12 @@
 
 .third-section .card:hover .left-card ul{
     display: flex;
+
     visibility: visible;
-    position: absolute;
     bottom: 0;
     padding-top: 10px;
     padding-bottom: 20px;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 /*Second card*/
@@ -454,3 +453,28 @@
     margin-left: 40px;
 }
 
+.text-for-card{
+    height: min-content;
+}
+
+@media (max-width: 600px) {
+    .second-section{
+        height: 95vh;
+    }
+
+    .second-section .content{
+        flex-direction: column;
+    }
+
+    .third-section {
+        flex-wrap: wrap;
+    }
+    .third-section .card {
+        flex: 1 100%;
+        min-height: 40vh;
+
+    }
+    .third-section .card{
+        margin: 20px !important;
+    }
+}
